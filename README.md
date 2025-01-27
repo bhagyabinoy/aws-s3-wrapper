@@ -1,4 +1,4 @@
-# s3_handler.py -> AWS S3 Wrapper
+# AWS S3 Wrapper -> s3_handler.py
 
 `aws-s3-wrapper` is a Python library for simplified interactions with Amazon S3. This wrapper provides a straightforward API for common S3 operations such as uploading, downloading, deleting, copying, and listing objects in S3 buckets. It uses `boto3` for AWS service integration and loads configuration from a `.env` file using `python-dotenv`.
 
@@ -18,7 +18,7 @@
 - `boto3`
 - `python-dotenv`
 
-# chrome-version.py ->  Chrome Version Detector
+# Chrome Version Detector -> chrome-version.py  
 This Python script determines the version of Google Chrome installed on a system. It is designed to work across multiple operating systems, including Windows, Linux, and macOS, and employs various methods to retrieve the Chrome version based on the platform.
 
 ## Features
