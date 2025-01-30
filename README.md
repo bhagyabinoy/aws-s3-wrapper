@@ -47,4 +47,26 @@ The script uses the uname command for Linux and macOS detection. If unavailable,
    3. Output
    The detected Chrome version is printed. If Chrome is not installed or the version cannot be determined, an appropriate message is displayed.
 
+# Google Signup -> google_auth_signup.py  
+
+### Overview
+This script handles Google OAuth2 authentication for user signup. It verifies a Google token, retrieves user details, and stores them in a mock database.  
+
+### Usage  
+1. Set your Google OAuth2 client secret as an environment variable:  
+   ```bash
+   export SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET="your_google_client_secret"
+   ```
+2. Run the script with a valid Google token:  
+   ```python
+   from google_auth_signup import google_signup
+
+   token = "your_google_oauth_token_here"
+   response, status_code = google_signup(token)
+   print(response, status_code)
+   ```
+   
+### Requirements
+- Python 3.x  
+- `google-auth` library (`pip install google-auth google-auth-oauthlib`)  
 
